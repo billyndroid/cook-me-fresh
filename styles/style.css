@@ -248,6 +248,18 @@
     }
 }
 
+@media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+}
+
 /* CTA Section */
 .cta {
     background: var(--accent-fire-orange);
