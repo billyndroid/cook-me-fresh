@@ -291,7 +291,12 @@
     background: var(--accent-fire-orange);
     color: var(--primary-beige);
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 40px; /* Updated padding */
+    display: flex; /* Added flex display */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Added gap between elements */
+    justify-content: space-between; /* Separate elements */
+    align-items: center; /* Align elements vertically */
 }
 
 .cta .btn {
