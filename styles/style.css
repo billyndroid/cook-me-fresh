@@ -268,6 +268,11 @@
     .about-content p {
         font-size: 1em;
     }
+
+    .footer-links-container {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 15px; /* Add spacing between links */
+    }
 }
 
 @media (max-width: 480px) {
@@ -313,15 +318,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F5F1E6;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
+        width: 100%; /* Ensure full width for proper centering */
+
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: center; /* Center the group of links */
+    align-items: center;
+    width: 100%; /* Ensure full width for proper centering */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .footer-menu {
     display: flex;
-    flex-direction: row; /* Changed to row for horizontal alignment */
-    justify-content: center; /* Center the menu horizontally */
+    flex-direction: column; /* Changed to column for vertical alignment */
+    justify-content: center;
+    align-items: center;
     gap: 20px; /* Adjusted gap for spacing */
     list-style: none;
     padding: 0;
@@ -332,6 +349,14 @@
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s ease; /* Added transition for hover effect */
+    padding: 10px 20px; /* Added padding for better click area */
+    margin: 5px 0; /* Added margin for spacing between items */
+    width: 100%; /* Set width to 100% for full-width links */
+    text-align: center; /* Centered text for better alignment */
+
+    font-size: 1em; /* Adjusted font size for better readability */
+
 }
 
 .footer-menu li a:hover {
