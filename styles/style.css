@@ -318,10 +318,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
     padding: 20px;
     text-align: center;
         width: 100%; /* Ensure full width for proper centering */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color:  var(--primary-dark-green); /* Added top border */
 
 }
 
@@ -347,7 +348,7 @@
 
 .footer-menu li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-beige);
     font-weight: bold;
     transition: color 0.3s ease; /* Added transition for hover effect */
     padding: 10px 20px; /* Added padding for better click area */
