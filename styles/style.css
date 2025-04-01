@@ -22,7 +22,7 @@
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Transferred inline style */
 }
 
 .navbar .logo {
@@ -35,11 +35,15 @@
 .logo-img {
     max-width: 150px;
     height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
+    gap: 20px; /* Transferred inline style */
+    margin: 0; /* Transferred inline style */
+    padding: 0; /* Transferred inline style */
 }
 
 .nav-menu li {
@@ -103,7 +107,7 @@
 .hero-text-container {
     max-width: 600px;
     margin: 20px;
-    color: var(--primary-black); /* Use black for better contrast */
+    color: #F5F1E6; /* Transferred inline style */
 }
 
 .hero-text-container h1 {
@@ -251,12 +255,16 @@
 @media (max-width: 480px) {
     .nav-menu {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center; /* Center the menu */
         gap: 10px;
     }
 
     .nav-menu li {
         margin: 0;
+    }
+
+    .logo-img {
+        transform: scale(3); /* Scale the logo to 300% */
     }
 }
 
@@ -294,4 +302,12 @@
 .footer-menu a {
     color: var(--primary-beige);
     text-decoration: none;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Transferred inline style */
 }
