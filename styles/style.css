@@ -127,6 +127,12 @@
     background: #8E3A59; /* Updated background color */
 }
 
+.services h2 {
+    padding: 20px; /* Added padding */
+    color: var(--primary-beige); /* Updated text color to beige */
+    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+}
+
 .service-container {
     display: flex;
     justify-content: center;
@@ -168,6 +174,12 @@
 
 .gallery-container img:hover {
     transform: scale(1.05);
+}
+
+.gallery h2 {
+    padding: 20px; /* Added padding */
+    color: var(--primary-dark-green); /* Updated text color to dark green */
+    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
 }
 
 /* Testimonials */
@@ -286,22 +298,38 @@
 
 /* Footer */
 .footer {
-    background: var(--primary-dark-green);
-    color: var(--primary-beige);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F1E6;
     padding: 20px;
+    text-align: center;
 }
 
 .footer-menu {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
 }
 
-.footer-menu a {
-    color: var(--primary-beige);
+.footer-menu li a {
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-menu li a:hover {
+    color: #555;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
 }
 
 /* Container */
