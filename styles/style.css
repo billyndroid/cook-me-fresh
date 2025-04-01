@@ -190,6 +190,12 @@
     color: var(--primary-beige);
 }
 
+.testimonials h2 {
+    padding: 20px; /* Added padding */
+    color: var(--primary-beige); /* Updated text color to beige */
+    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+}
+
 .testimonial-container {
     display: flex;
     justify-content: center;
@@ -339,3 +345,19 @@
     align-items: center;
     width: 100%; /* Transferred inline style */
 }
+
+#areas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Transferred inline style */
+}
+
+#footer-text {
+    text-align: center;
+    color: var(--primary-dark-green); /* Updated text color to dark green */
+    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+    font-size: 1.2em;
+    margin-top: 20px; /* Added margin for spacing */
+}
+/* End of CSS */
