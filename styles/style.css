@@ -393,15 +393,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-leaf-green);
+    font-style: italic;
+    margin-top: 2vw;
+    font-size: 1.2em;
     width: 100%; /* Transferred inline style */
 }
 
 #footer-text {
     text-align: center;
-    color: var(--primary-leaf-green);
+
     font-family: 'Montserrat', sans-serif; /* Primary font for headings */
     font-size: 1.2em;
     margin-top: 20px; /* Added margin for spacing */
+    margin-bottom: 2vw;
 }
 /* End of CSS */
