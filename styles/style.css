@@ -133,6 +133,12 @@
     font-family: 'Montserrat', sans-serif; /* Primary font for headings */
 }
 
+.services h3 {
+    font-family: 'Montserrat', sans-serif; /* Secondary font for subheadings */
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
 .service-container {
     display: flex;
     justify-content: center;
@@ -304,6 +310,12 @@
     align-items: center; /* Align elements vertically */
 }
 
+.cta h2 {
+    padding: 20px; /* Added padding */
+    color: var(--primary-beige); /* Updated text color to beige */
+    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+}
+
 .cta .btn {
     background: var(--primary-beige);
     color: var(--accent-fire-orange);
@@ -349,7 +361,6 @@
 .footer-menu li a {
     text-decoration: none;
     color: var(--primary-beige);
-    font-weight: bold;
     transition: color 0.3s ease; /* Added transition for hover effect */
     padding: 10px 20px; /* Added padding for better click area */
     margin: 5px 0; /* Added margin for spacing between items */
@@ -361,13 +372,13 @@
 }
 
 .footer-menu li a:hover {
-    color: #555;
+    color: var(--accent-fire-orange); /* Change color on hover */
 }
 
 .footer p {
     margin: 5px 0;
-    color: #666;
-    font-size: 14px;
+    color: var(--primary-beige);
+
 }
 
 /* Container */
@@ -382,12 +393,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--primary-leaf-green);
     width: 100%; /* Transferred inline style */
 }
 
 #footer-text {
     text-align: center;
-    color: var(--primary-dark-green); /* Updated text color to dark green */
+    color: var(--primary-leaf-green);
     font-family: 'Montserrat', sans-serif; /* Primary font for headings */
     font-size: 1.2em;
     margin-top: 20px; /* Added margin for spacing */
