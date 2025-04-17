@@ -33,9 +33,11 @@
 }
 
 .logo-img {
-    max-width: 150px;
+    max-width: 18vw;
     height: auto;
     transition: transform 0.3s ease; /* Smooth transition for scaling */
+    padding: 0; /* Removed padding */
+    margin: 0;
 }
 
 .nav-menu {
