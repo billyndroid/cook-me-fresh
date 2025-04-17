@@ -407,4 +407,54 @@
     margin-top: 20px; /* Added margin for spacing */
     margin-bottom: 2vw;
 }
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 25%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow:auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 400%; /* Adjust based on the number of images */
+}
+
+.carousel-container img {
+    width: 100%;
+    flex: 1 0 100%;
+    object-fit: cover;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
 /* End of CSS */
