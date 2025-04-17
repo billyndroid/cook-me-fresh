@@ -384,6 +384,26 @@
 
 }
 
+/* Footer Social Media Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: var(--primary-beige);
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: var(--accent-fire-orange); /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
 /* Container */
 .container {
     display: flex;
