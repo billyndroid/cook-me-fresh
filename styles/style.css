@@ -167,7 +167,8 @@
 .gallery {
     padding: 50px 20px;
     text-align: center;
-    background: var(--primary-beige);
+    background: var(--primary-leaf-green);
+    color: var(--primary-beige);
 }
 
 .gallery-container {
