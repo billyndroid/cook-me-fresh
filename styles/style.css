@@ -411,10 +411,10 @@
 /* Carousel */
 .carousel {
     position: relative;
-    width: 25%;
-    max-width: 800px;
+    width: 100%; /* Allow the carousel to span the full width of the screen */
+    max-width: 100%; /* Remove the fixed max-width to prevent limiting the width */
     margin: 50px auto;
-    overflow:auto;
+    overflow: hidden; /* Hide any overflowing content */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -422,13 +422,13 @@
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 400%; /* Adjust based on the number of images */
+    width: 100%; /* Adjust to fit the full width of the carousel */
 }
 
 .carousel-container img {
     width: 100%;
     flex: 1 0 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensure the image scales properly */
 }
 
 .carousel-arrow {
