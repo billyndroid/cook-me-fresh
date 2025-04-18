@@ -195,7 +195,7 @@
     text-align: center; /* Center the text horizontally */
     margin: 20px 0; /* Add spacing above and below the title */
     font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
-    color: #2E0854;
+    color: var(--secondary-dark-gray); /* Updated text color to dark grey */
     padding-bottom: 2vw;
 }
 
