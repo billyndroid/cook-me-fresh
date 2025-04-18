@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const line = "63783";
         
         // Dynamically assemble the phone number from these parts
-        const phoneNumber = `+${countryCode} (${areaCode}) ${prefix}-${line}`;
+        const phoneNumber = `+${44} (${079}) ${2656}-${3783}`;
         
         // Get the element and update its content
         const phoneElement = document.getElementById('phone-number');
