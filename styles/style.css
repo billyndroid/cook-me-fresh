@@ -114,8 +114,11 @@
 }
 
 .hero-text-container h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
+    font-family: poppins;
     margin-bottom: 15px;
+    font-weight: 520; /* Added font weight for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
 }
 
 .hero-text-container p {
