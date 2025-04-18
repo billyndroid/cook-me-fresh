@@ -311,7 +311,9 @@
     }
 
     .logo-img {
-        transform: scale(3); /* Scale the logo to 300% */
+        transform: scale(9); /* Scale the logo to 300% */
+        padding-left: 3vw;
+
     }
 }
 
