@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set a small delay to simulate assembly (optional)
     setTimeout(function() {
         // Break up the phone number into parts to avoid pattern recognition
-        const countryCode = "1";
-        const areaCode = "555";
+        const countryCode = "44"; // Example: UK country code
+        const areaCode = "079"; // Example: UK mobile area code
         
         // Further splitting the local part of the number
-        const prefix = "123";
-        const line = "4567";
+        const prefix = "265";
+        const line = "63783";
         
         // Dynamically assemble the phone number from these parts
         const phoneNumber = `+${countryCode} (${areaCode}) ${prefix}-${line}`;
