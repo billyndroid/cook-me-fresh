@@ -447,7 +447,7 @@
     position: relative;
     width: 100%; /* Allow the carousel to span the full width of the screen */
     max-width: 100%; /* Remove the fixed max-width to prevent limiting the width */
-    margin: 50px auto;
+    
     overflow: hidden; /* Hide any overflowing content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
