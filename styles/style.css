@@ -311,8 +311,10 @@
     }
 
     .logo-img {
-        transform: scale(9); /* Scale the logo to 300% */
-        padding-left: 3vw;
+        transform: scale(4.8); /* Scale the logo to 300% */
+        margin-left: 80px; /* Added margin for spacing */
+        padding: 0; /* Removed padding */
+        border-radius: 1px; /* Added border radius for logo */
 
     }
 }
