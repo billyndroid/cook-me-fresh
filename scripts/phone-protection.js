@@ -22,8 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Make the phone number clickable with tel: protocol
             const phoneButton = document.querySelector('.phone-button');
             if (phoneButton) {
-                phoneButton.setAttribute('href', `tel:+${countryCode}${areaCode}${prefix}${line}`);
+                const telURI = `tel:+${countryCode}${areaCode}${prefix}${line}`;
+                phoneButton.setAttribute('href', telURI);
+                console.log(`Phone button href set to: ${telURI}`); // Debugging log
+            } else {
+                console.error("Phone button not found in the DOM.");
             }
+        } else {
+            console.error("Phone number element not found in the DOM.");
         }
     }, 300); // Small delay for effect (can be removed)
     
