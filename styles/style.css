@@ -6,7 +6,6 @@
     --primary-beige: #F5F1E6;
     --accent-fire-orange: #E25822;
     --secondary-dark-gray: #444444;
-}
 
 /* General Reset */
 * {
@@ -607,6 +606,21 @@
 .phone-button:hover {
     background-color: var(--accent-fire-orange); /* Highlight background on hover */
     color: var(--primary-beige); /* Change text color on hover */
+}
+
+/* Contact Button Headings */
+.contact-button strong {
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent sans-serif font */
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    color: #6F4E37; /* Match the theme color */
+    font-weight:400/* Make the headings stand out */
+    margin-bottom: 0.5rem; /* Add spacing below the heading */
+    display: block; /* Ensure the heading is on its own line */
+}
+
+.contact-button:hover strong {
+    color: var(--accent-fire-orange); /* Change color on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* End of CSS */
