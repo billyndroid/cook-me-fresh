@@ -126,6 +126,7 @@
 </section>
 
 <!-- Gallery Section -->
+<h2 id="gallerytitle">Gallery</h2>
 <section id="gallery" class="gallery, carousel">
 <h2>Gallery</h2>
 <div class="gallery-container, carousel-container">
@@ -165,11 +166,38 @@
 
 
 <!-- Call to Action -->
-<section id="contact" class="cta">
+<section class="cta">
 <h2>Ready to Get Started?</h2>
 <p>Contact us today and take your culinary creativity to the next level!</p>
-<a href="#" class="btn">Contact Us</a>
+<a href="#contact" class="btn">Contact Us</a>
 </section>
+
+<!-- Contact Section -->
+
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    
+    <div class="contact-options">
+        <!-- The phone number container - left empty in HTML -->
+        <div class="contact-button phone-button">
+            <span class="icon">📞</span>
+            <div>
+                <strong>Call Us</strong>
+                <span id="phone-number">Please enable JavaScript to view our contact number</span>
+            </div>
+        </div>
+        
+        <!-- Email contact button -->
+        <a href="mailto:info@cookmefresh.com" class="contact-button email-button">
+            <span class="icon">✉️</span>
+            <div>
+                <strong>Email Us</strong>
+                <span>info@cookmefresh.com</span>
+            </div>
+        </a>
+    </div>
+</section>
+
 
 <!-- Footer -->
 <div class="container">
@@ -194,7 +222,10 @@
     </div>
 </footer>
 </div>
+
 <script src="scripts/carousel.js"></script>
 <script src="scripts/script.js"></script>
+<!-- Script at the end to assemble the phone number after DOM loads -->
+<script src="phone-protection.js"></script>
 </body>
 </html>

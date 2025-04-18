@@ -184,12 +184,20 @@
 
 .gallery-container img:hover {
     transform: scale(1.05);
+    
 }
 
 .gallery h2 {
     padding: 20px; /* Added padding */
     color: var(--primary-dark-green); /* Updated text color to dark green */
-    font-family: 'Montserrat', sans-serif; /* Primary font for headings */
+    text-align: center; /* Center the text */
+}
+
+.gallery h3 {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
+    color: var(--primary-dark-green); /* Match the theme color */
 }
 
 /* Testimonials */
@@ -480,5 +488,93 @@
 
 .right-arrow {
     right: 10px;
+}
+
+
+/* Contact section styles */
+.contact-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4CAF50;
+}
+
+.contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Contact button styles */
+.contact-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    min-width: 250px;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.phone-button {
+    border-left: 4px solid #e74c3c;
+    cursor: pointer;
+}
+
+.email-button {
+    border-left: 4px solid #3498db;
+}
+
+.icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.contact-button div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-button strong {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Style for when the phone number is assembled */
+#phone-number {
+    transition: color 0.3s ease;
+}
+
+#phone-number.loaded {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-button {
+        width: 100%;
+        max-width: 350px;
+    }
 }
 /* End of CSS */
