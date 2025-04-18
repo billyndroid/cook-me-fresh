@@ -5,11 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Set a small delay to simulate assembly (optional)
     setTimeout(function() {
-        // Break up the phone number into parts to avoid pattern recognition
-        const countryCode = "44"; // Example: UK country code
-        const areaCode = "079"; // Example: UK mobile area code
-        
-        // Further splitting the local part of the number
+        const countryCode = "44";
+        const areaCode = "079";
         const prefix = "265";
         const line = "63783";
         
@@ -25,24 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // Make the phone number clickable with tel: protocol
             const phoneButton = document.querySelector('.phone-button');
             if (phoneButton) {
-                phoneButton.addEventListener('click', function() {
-                    // Create the tel URI from the assembled parts rather than string
-                    const telURI = `tel:+${countryCode}${areaCode}${prefix}${line}`;
-                    window.location.href = telURI;
-                });
+                phoneButton.setAttribute('href', `tel:+${countryCode}${areaCode}${prefix}${line}`);
             }
         }
     }, 300); // Small delay for effect (can be removed)
     
     // Additional obfuscation: Add a decoy element that bots might scrape instead
-    // This creates an invisible element with a fake number that might trap bots
     const decoyElement = document.createElement('div');
     decoyElement.style.position = 'absolute';
     decoyElement.style.opacity = '0';
     decoyElement.style.pointerEvents = 'none';
     decoyElement.innerHTML = '<a href="tel:+10000000000">+1 (000) 000-0000</a>';
     document.body.appendChild(decoyElement);
-    
+
     // Extra protection: Add event listeners to defeat dynamic scrapers
     // Attempting to detect programmatic interactions vs human interactions
     let humanInteraction = false;
