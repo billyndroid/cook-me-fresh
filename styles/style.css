@@ -188,9 +188,10 @@
 }
 
 .gallery h2 {
-    padding: 20px; /* Added padding */
-    color: var(--primary-dark-green); /* Updated text color to dark green */
-    text-align: center; /* Center the text */
+    text-align: center; /* Center the text horizontally */
+    margin: 20px 0; /* Add spacing above and below the title */
+    font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
+    color: var(--primary-dark-green); /* Match the theme color */
 }
 
 .gallery h3 {
