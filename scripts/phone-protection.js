@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const telURI = `tel:+${countryCode}${areaCode}${prefix}${line}`;
                 phoneButton.setAttribute('href', telURI);
                 console.log(`Phone button href set to: ${telURI}`); // Debugging log
+                console.log(`tel:+${countryCode}${areaCode}${prefix}${line}`);
             } else {
                 console.error("Phone button not found in the DOM.");
             }
