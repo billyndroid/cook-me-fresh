@@ -170,7 +170,7 @@
 .gallery {
     padding: 50px 20px;
     text-align: center;
-    background: #6F4E37;
+    background: #D8CFC0;
     color: var(--primary-beige);
 }
 
@@ -194,7 +194,7 @@
     text-align: center; /* Center the text horizontally */
     margin: 20px 0; /* Add spacing above and below the title */
     font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
-    color: #F5E7CE; 
+    color: #382923; 
     padding-bottom: 2vw;
 }
 
