@@ -535,12 +535,13 @@
 }
 
 .phone-button {
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #E25822;
     cursor: pointer;
 }
 
 .email-button {
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #E25822;
+    cursor: pointer;
 }
 
 .icon {
