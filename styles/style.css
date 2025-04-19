@@ -37,6 +37,7 @@
     transition: transform 0.3s ease; /* Smooth transition for scaling */
     padding: 0; /* Removed padding */
     margin: 0;
+
 }
 
 .nav-menu {
@@ -45,6 +46,8 @@
     gap: 20px; /* Transferred inline style */
     margin: 0; /* Transferred inline style */
     padding: 0; /* Transferred inline style */
+    padding-right: 5%;
+
 }
 
 .nav-menu li {
@@ -303,6 +306,8 @@
         flex-direction: column;
         align-items: center; /* Center the menu */
         gap: 10px;
+        padding-right: 20%;
+
     }
 
     .nav-menu li {
