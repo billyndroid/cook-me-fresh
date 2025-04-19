@@ -283,6 +283,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-menu {
+        padding-right: 3%;
+
+    }
     .about-content {
         padding: 15px;
     }
