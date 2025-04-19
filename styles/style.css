@@ -117,7 +117,7 @@
 
 .hero-text-container h1 {
     font-size: 4.5em;
-    font-family: poppins;
+    font-family: poppins, sans-serif; /* Updated font family */
     margin-bottom: 15px;
     font-weight: 520; /* Added font weight for emphasis */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
