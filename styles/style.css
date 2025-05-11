@@ -725,5 +725,16 @@
     transition: color 0.3s ease; /* Keep smooth transition for hover effect */
 }
 
+/* h4 Styling */
+h4 {
+    font-family: 'Montserrat', sans-serif; /* Match the font with h3 elements */
+    font-size: 1em; /* Slightly smaller than h3 elements */
+    color: var(--primary-beige);
+    font-weight: 700; /* Ensure a medium font weight */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    margin-top: 10px;
+    text-align: left; /* Align text to the left for consistency */
+}
+
 /* End of CSS */
 
