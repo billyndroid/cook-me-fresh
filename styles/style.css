@@ -638,6 +638,10 @@
     border-left: 4px solid #E25822;
     cursor: pointer;
 }
+.phone-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
 .email-button {
     border-left: 4px solid #E25822;
@@ -674,7 +678,7 @@
 }
 
 #phone-number.loaded {
-    color: #2ecc71;
+    color:var(--primary-beige)
     font-weight: 500;
 }
 
@@ -695,14 +699,14 @@
 .phone-button {
     display: flex;
     align-items: center;
-    gap: 10px;
-    text-decoration: none; /* Remove underline for links */
-    color: inherit; /* Inherit text color */
-    cursor: pointer; /* Change cursor to pointer */
-    padding: 10px 15px;
-    border: 1px solid var(--primary-beige);
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 1rem 1.5rem;
+    background-color: #F5E7CE;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    min-width: 250px;
 }
 
 .phone-button:hover {
