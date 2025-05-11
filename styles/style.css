@@ -319,6 +319,10 @@
     .about-content p {
         font-size: 1em;
     }
+    .service-card {
+        padding: 20px;
+        width: 80%;
+    }
 
     .footer-links-container {
         flex-direction: column; /* Stack links vertically on smaller screens */
@@ -374,7 +378,10 @@
     text-decoration: none;
     border-radius: 5px;
 }
-
+.service-card {
+    padding: 20px;
+    width: 80%;
+}
 /* Footer */
 .footer {
     display: flex;
