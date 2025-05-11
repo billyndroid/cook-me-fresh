@@ -189,8 +189,7 @@
 
 /* Service Card List Styling */
 .service-card ul {
-    list-style-type: disc; /* Use modern bullet points */
-    list-style-position: inside; /* Align bullets with the text */
+
     margin: 15px 0; /* Add spacing above and below the list */
     padding-left: 20px; /* Add padding for proper alignment */
     text-align: left; /* Align text to the left */
