@@ -218,7 +218,7 @@
     margin: 20px 0; /* Add spacing above and below the title */
     font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
     color: var(--secondary-dark-gray); /* Updated text color to dark grey */
-    z-index: 3
+    z-index: 3; /* Ensure the title is above the background */
     padding-bottom: 2vw;
 }
 
