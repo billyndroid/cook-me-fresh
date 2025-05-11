@@ -124,14 +124,16 @@
 }
 
 .hero-text-container p {
-    font-size: 1.2em; /* Keep the existing font size */
+    font-size: 1em; /* Keep the existing font size */
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Dark background with 20% opacity */
-    padding: 15px; /* Add padding inside the box */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background with 20% opacity */
+    padding: 10px; /* Add padding inside the box */
     border-radius: 10px; /* Match the border radius with the rest of the document */
     color: var(--primary-beige); /* Ensure text color contrasts with the background */
-    line-height: 1.6; /* Improve readability with proper line spacing */
+    line-height: 1.2; /* Improve readability with proper line spacing */
     text-align: center; /* Center-align the text */
+    font-family: poppins, sans-serif; /* Updated font family */
+
 }
 
 /* Services */
@@ -183,6 +185,33 @@
     border-radius: 10px; /* Optional: Match the card's border radius */
     object-fit: cover; /* Ensure the image covers the container without distortion */
     margin-bottom: 15px; /* Add spacing below the image */
+}
+
+/* Service Card List Styling */
+.service-card ul {
+    list-style-type: disc; /* Use modern bullet points */
+    list-style-position: inside; /* Align bullets with the text */
+    margin: 15px 0; /* Add spacing above and below the list */
+    padding-left: 20px; /* Add padding for proper alignment */
+    text-align: left; /* Align text to the left */
+}
+
+.service-card ul ul {
+    list-style-type: circle; /* Use smaller bullets for nested lists */
+    margin: 10px 0; /* Add spacing for nested lists */
+    padding-left: 20px; /* Indent nested lists */
+}
+
+.service-card li {
+    font-family: 'Lora', serif; /* Match the font with the rest of the text */
+    font-size: 1em; /* Match the font size with the rest of the text */
+    line-height: 1.6; /* Maintain good spacing between lines */
+    color: var(--primary-beige); /* Match the text color with the rest of the service card */
+}
+
+.service-card li::marker {
+    font-size: 1.5em; /* Larger bullet points */
+    color: var(--accent-fire-orange); /* Modern color for bullets */
 }
 
 /* Responsive Design for Smaller Screens */
@@ -627,8 +656,17 @@
 }
 
 .contact-button strong {
-    font-size: 1.1rem;
-    margin-bottom: 0.2rem;
+    font-family: 'Lora', serif; /* Revert to serif font */
+    font-size: 1rem; /* Revert to smaller font size */
+    color: #333; /* Revert to darker text color */
+    font-weight: normal; /* Revert to normal font weight */
+    margin-bottom: 0.2rem; /* Adjust spacing below the heading */
+    display: block; /* Keep the heading on its own line */
+}
+
+.contact-button:hover strong {
+    color: #333; /* Revert hover color to match the original text color */
+    transition: color 0.3s ease; /* Keep smooth transition for hover effect */
 }
 
 /* Style for when the phone number is assembled */
@@ -675,17 +713,17 @@
 
 /* Contact Button Headings */
 .contact-button strong {
-    font-family: 'Montserrat', sans-serif; /* Ensure consistent sans-serif font */
-    font-size: 1.2rem; /* Adjust font size for better readability */
-    color: #6F4E37; /* Match the theme color */
-    font-weight:400/* Make the headings stand out */
-    margin-bottom: 0.5rem; /* Add spacing below the heading */
-    display: block; /* Ensure the heading is on its own line */
+    font-family: 'Lora', serif; /* Revert to serif font */
+    font-size: 1rem; /* Revert to smaller font size */
+    color: #333; /* Revert to darker text color */
+    font-weight: normal; /* Revert to normal font weight */
+    margin-bottom: 0.2rem; /* Adjust spacing below the heading */
+    display: block; /* Keep the heading on its own line */
 }
 
 .contact-button:hover strong {
-    color: var(--accent-fire-orange); /* Change color on hover */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #333; /* Revert hover color to match the original text color */
+    transition: color 0.3s ease; /* Keep smooth transition for hover effect */
 }
 
 /* End of CSS */
