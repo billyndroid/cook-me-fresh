@@ -196,7 +196,7 @@
 }
 
 .service-card ul ul {
-    list-style-type: circle; /* Use smaller bullets for nested lists */
+     /* Use smaller bullets for nested lists */
     margin: 10px 0; /* Add spacing for nested lists */
     padding-left: 20px; /* Indent nested lists */
 }
