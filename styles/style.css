@@ -124,8 +124,14 @@
 }
 
 .hero-text-container p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Keep the existing font size */
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Dark background with 20% opacity */
+    padding: 15px; /* Add padding inside the box */
+    border-radius: 10px; /* Match the border radius with the rest of the document */
+    color: var(--primary-beige); /* Ensure text color contrasts with the background */
+    line-height: 1.6; /* Improve readability with proper line spacing */
+    text-align: center; /* Center-align the text */
 }
 
 /* Services */
