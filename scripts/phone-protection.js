@@ -2,41 +2,54 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     // Wait until the DOM is fully loaded before running
-
-    // Set a small delay to simulate assembly (optional)
     setTimeout(function () {
         const countryCode = "44";
         const areaCode = "079";
         const prefix = "265";
         const line = "63783";
 
-        // Dynamically assemble the phone number from these parts
-        const phoneNumber = `+${countryCode}${areaCode}${prefix}${line}`;
+        // assemble numeric string used by tel: and readable display (not shown)
+        const phoneNumberNumeric = `${countryCode}${areaCode}${prefix}${line}`; // e.g. 4479...
         const phoneElement = document.getElementById('phone-number');
+        const phoneButton = document.querySelector('.phone-button');
 
         if (phoneElement) {
-            // Obscure the phone number text
+            // keep visible text generic to avoid scraping
             phoneElement.textContent = "Click to Call";
             phoneElement.classList.add('loaded');
-
-            // Add a click event listener to dynamically set the href
-            const phoneButton = document.querySelector('.phone-button');
-            if (phoneButton) {
-                phoneButton.addEventListener('click', function (event) {
-                    event.preventDefault(); // Prevent default behavior initially
-                    const telURI = `tel:${phoneNumber}`;
-                    phoneButton.setAttribute('href', telURI);
-                    console.log(`Phone button href set to: ${telURI}`); // Debugging log
-
-                    // Trigger the phone dialer after setting the href
-                    window.location.href = telURI;
-                });
-            } else {
-                console.error("Phone button not found in the DOM.");
-            }
-        } else {
-            console.error("Phone number element not found in the DOM.");
         }
+
+        if (!phoneButton) {
+            console.error('phone-button element not found');
+            return;
+        }
+
+        // On first user click set href then navigate. This prevents number appearing in markup until interaction.
+        phoneButton.addEventListener('click', function (event) {
+            const currentHref = phoneButton.getAttribute('href') || '';
+            if (currentHref.startsWith('tel:')) {
+                // already set, allow default behaviour
+                return;
+            }
+
+            event.preventDefault();
+            const telURI = `tel:+${phoneNumberNumeric}`;
+            phoneButton.setAttribute('href', telURI);
+
+            // short delay to ensure href is set, then trigger navigation
+            setTimeout(function () {
+                // prefer navigating via location to ensure dialer opens on mobile
+                window.location.href = telURI;
+            }, 10);
+        });
+
+        // decoy for basic scrapers (keeps previous behaviour)
+        const decoyElement = document.createElement('div');
+        decoyElement.style.position = 'absolute';
+        decoyElement.style.opacity = '0';
+        decoyElement.style.pointerEvents = 'none';
+        decoyElement.innerHTML = '<a href="tel:+10000000000">+1 (000) 000-0000</a>';
+        document.body.appendChild(decoyElement);
     }, 300); // Small delay for effect (can be removed)
 
     // Additional obfuscation: Add a decoy element that bots might scrape instead
